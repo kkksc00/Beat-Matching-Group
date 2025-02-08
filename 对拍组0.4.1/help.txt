@@ -1,0 +1,51 @@
+==========对拍组帮助文件==========
+
+作者: pies_0x (uid:964645)
+
+位置: www.luogu.com.cn/problem/U493567
+
+文件:
+	- main.cpp
+	- help.txt
+	- news.txt
+	- Include
+		- random.hpp
+		- graph.hpp
+	- JudgingFile
+		- std.exe *
+		- ans.exe *
+		- random.exe *
+		- in.txt *
+		- std_out.txt *
+		- ans_out.txt *
+	- UserFile
+		- std.cpp
+		- ans.cpp
+		- random.cpp
+		- checker.cpp
+	- Hack
+		- in.txt *
+		- ans.txt *
+*: 运行时创建.
+
+使用方法:
+	1. 将 g++.exe 的父文件夹(bin)路径添加到环境变量.
+	2. 在 ans.cpp 放置可以输出正确答案的程序, 使用标准 io.
+	3. 在 std.cpp 放置要 hack 的程序，使用标准 io.
+	4. 在 random.cpp 编写随机数据生成器.
+	5. 在 checker.cpp 编写 spj, 如果 std 的输出正确, 需要 return 1, 反之，需要 return 0. 如果你想全文比较，无需修改该文件.
+	6. 运行 main.cpp.
+	7. 对拍结束后，hack 在 Hack 目录中.
+
+注意事项:
+	1. ans.cpp, std.cpp, random.cpp, checker.cpp 必须使用标准 io.
+	2. 默认编译参数为 -O2 -std=c++14, 请根据需要修改.
+
+关于库文件:
+	包含相对路径: "\Include"
+	编译参数: "-I 绝对路径"
+	如何使用:
+		去文件里面看
+
+*如何修改时限:
+	直接去 main.cpp 里面改
